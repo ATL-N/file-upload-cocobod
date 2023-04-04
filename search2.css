@@ -1,0 +1,306 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-image: url(resources/topcoffee2.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-size: 100vw 100vh;
+
+  }
+  
+  .form_container{
+    /* max-width: 960px; */
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'form form'
+    'table table';
+    grid-template-columns: 30% auto; 
+    grid-template-rows: 90px 60px auto;
+  }
+
+  /* .header_div,  */
+  .form_div,
+  .table_div{
+    padding-left: 20px;
+    /* grid-template-columns: 30% auto; 
+    grid-template-rows: 100px auto; */
+  }
+
+  .header_div{
+    
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    align-items: center;
+    height: 70px;
+    background-color:rgb(102,58,44);
+    color: #fff;
+  }
+
+  .button {
+    display: block;
+    /* margin-top: 20px; */
+    padding: 10px 20px;
+    color: rgb(102,58,44);
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.2s;
+  }
+  .button1 {
+    display: block;
+    /* margin-top: 20px; */
+    padding: 0;
+    background-color: rgb(102,58,44);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:0.2s;
+  }
+
+  .button:hover {
+    color: white;
+    background-color: brown;
+   
+  }
+
+  .form_div{
+    grid-area: form;
+    /* margin-bottom: 10px */
+    height: 60px;
+    background: white;
+    opacity:0.8;
+    margin: 0 20px;
+    display: flex;
+
+    
+    /* position: relative;
+    right: 10px; */
+  }
+
+  .table_div{
+    grid-area: table;
+    /* margin: 0, 20px */
+  }
+
+
+  form{
+    background: white;
+    opacity: 0.8;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    /* top: 0; */
+    right: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 430px;
+    /* margin-bottom: 50px */
+  }
+
+  .table_div_center{
+    background: white;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    /* top: 10px; */
+    /* bottom: 20px; */
+    border-radius: 10px;
+    margin-right: 20px;
+    /* margin-left: 50px; */
+    height: 70vh
+  }
+
+  th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    height: 2rem;
+
+  }
+  /* tr:hover {
+    background-color: gray;} */
+
+  p {
+    margin: 10px 0;
+  }
+
+  .pagination{
+    background: white;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* top: 10px; */
+    /* bottom: 20px; */
+    border-radius: 10px;
+    margin-right: 20px;
+    /* margin-left: 50px; */
+    height: 5vh
+  }
+  
+  a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgb(102,58,44);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    border-radius: 10px;
+  }
+  
+  a:hover {
+    background-color: #E9CDC7;
+  }
+  a:active {
+    background-color: red;
+  }
+
+  .error {
+    color: #f00;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  h1 {
+    
+    margin: 0;
+    /* padding: 20px; */
+    text-align: center;
+    /* margin-bottom: 10px; */
+    text-align: center;
+  }
+
+  form input{
+    border-top: 20px;
+    /* border-bottom: 20px; */
+    border-radius: 10px;
+    border: 3px solid #E9CDC7;
+    width: 60%;
+    height: 25px;
+    transition: 0.2s;
+  }
+  form input:hover{
+    width: 80%;
+  }
+  form input:active{
+    width: 90%;
+  }
+
+  form label{
+    /* border-bottom: 20px; */
+    /* border-bottom: 20px; */
+    padding-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    /* height: 40px; */
+  }
+
+  form button{
+    font-weight: 900;
+    font-size: 1.2rem;
+    position: relative;
+    border-radius: 10px;
+    background: rgb(102,58,44);
+    color:white;
+    width: 100px;
+    height: 30px;
+    /* margin-top: 10px; */
+    transition: 0.5s;
+    border:none;
+    left:10px;
+    right: 20px
+
+  }
+
+  form button:hover{
+    
+    background: white;
+    color:rgb(102,58,44);
+    border:2px solid black;
+  }
+
+ul{
+  list-style: none;
+}
+
+.search-label{
+    padding-top: 10px;
+    border-radius: 10px;
+    width: 150px;
+    left: 0;
+}
+.search-box:hover{
+    width: 185px;
+}
+
+.search-box{
+  /* display flex; */
+    border-top: 20px;
+    /* border-bottom: 20px; */
+    /* border-radius: 10px; */
+    border: 3px solid #E9CDC7;
+    width: 180px;
+    height: 25px;
+    transition: 0.2s;
+    right:20px
+}
+.search-button{
+    margin-right: 30px
+}
+
+.select_folder_div{
+  padding-top: 5px
+}
+
+#button_select{
+  margin-top: 5px;
+  background-color: rgb(102,58,44);
+  color: #fff;
+
+}
+#button_select:hover{
+  background-color:red;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  left:10%;
+  bottom:10px;
+  width: 200px;
+  height: 50px;
+  background-color: blue;
+  color: black;
+  /* align-items: center; */
+  text-align: left;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.hidden{
+  display: none;
+}
+

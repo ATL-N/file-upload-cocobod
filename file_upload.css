@@ -1,0 +1,209 @@
+/* Set font family and size for all elements */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    /* background-color: #f4f4f4; */
+    margin: 0;
+    padding: 0;
+    background-image: url(resources/topcoffee2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    text-transform:uppercase;
+  }
+
+  .back1 {
+    background: black;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  
+  /* Style the form container */
+  form {
+    border: 4px solid white;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    padding-top: 5px;
+    /* border: 4px solid #ccc; */
+    border-radius: 10px;
+    background: white;
+    opacity: 0.6;
+    text-transform:uppercase;
+  }
+  
+  /* Style the form title */
+  h1 {
+    background-color:rgb(102,58,44);
+    color: #fff;
+    margin: 0;
+    /* padding: 20px; */
+    text-align: center;
+    /* margin-bottom: 10px; */
+    text-align: center;
+  }
+
+  .h1 {
+    display: grid;
+    /* height: 80px; */
+    grid-template-columns: 70% 15% 15%;
+    align-items: center;
+    background-color:rgb(102,58,44);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Style the form labels */
+  .label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform:uppercase;
+  }
+  
+  /* Style the file input */
+  input[type="file"] {
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Style the text input and textarea */
+  input[type="text"], input[type="file"],input[type="date"], input[type="number"], textarea, select  {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+    text-transform:uppercase;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"], input[type="button"] {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(102,58,44);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform:uppercase;
+  }
+
+  .button {
+    display: block;
+    /* margin-top: 20px; */
+    padding: 10px 20px;
+    color: rgb(102,58,44);
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.2s;
+    text-transform:uppercase;
+  }
+
+  .button:hover {
+    color: white;
+    background-color: brown;
+   
+  }
+  
+  /* Style the submit button on hover */
+  input[type="submit"]:hover {
+    background-color: rgb(102,18,10);
+  }
+
+
+  .form_message--error{
+    color: red;
+    text-transform: uppercase;
+  }
+
+  .form_message--success{
+    color: green;
+    text-transform: uppercase;
+  }
+  
+  #button_select{
+    margin-top: 5px;
+    background-color: rgb(102,58,44);
+    color: #fff;
+  
+  }
+  #button_select:hover{
+    background-color:red;
+  }
+
+
+  .folder_details{
+    display:grid;
+    /* flex-direction: row; */
+    grid-template-columns: 50% 50%;
+    /* gap: 5px; */
+  }
+
+  .folder_n{
+    display:flex;
+    flex-direction: column;
+    margin-right: 10px;
+    justify-content: center;
+   
+  }
+
+  .folder_n1{
+    display:flex;
+    flex-direction: column;
+    text-align:right;
+    /* margin-right: 10px; */
+    /* width: 40vw; */
+  }
+  .folder_n2{
+    display:grid;
+    grid-template-columns: 80% auto;
+    /* flex-direction: row; */
+    text-align:right;
+    margin-top: 35px;
+    /* margin-right: 10px; */
+    /* width: 40vw; */
+  }
+
+  .label1{
+    /* position: relative; */
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+
+  #last_reference, #last_reference:focus{
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: italic;
+    color: gray;
+  }
+  /* #last_reference:focus{
+    border: none;
+  } */
+
+  /* .hidden{
+    display:none;
+  } */
